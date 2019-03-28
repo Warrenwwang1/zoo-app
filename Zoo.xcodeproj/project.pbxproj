@@ -12,6 +12,12 @@
 		8007C4F11F0590F400292C41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8007C4EF1F0590F400292C41 /* Main.storyboard */; };
 		8007C4F31F0590F400292C41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8007C4F21F0590F400292C41 /* Assets.xcassets */; };
 		8007C4F61F0590F400292C41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8007C4F41F0590F400292C41 /* LaunchScreen.storyboard */; };
+		8007C4FF1F0592D900292C41 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8007C4FE1F0592D900292C41 /* MapKit.framework */; };
+		8007C5031F06BBE800292C41 /* CameraPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8007C5021F06BBE800292C41 /* CameraPage.swift */; };
+		809499351F09C28900C8189B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809499341F09C28900C8189B /* CoreData.framework */; };
+		809499381F09C35700C8189B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 809499361F09C35700C8189B /* Model.xcdatamodeld */; };
+		8094993A1F0ABD1400C8189B /* coordinatePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809499391F0ABD1400C8189B /* coordinatePin.swift */; };
+		8094993C1F0ABD5800C8189B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8094993B1F0ABD5800C8189B /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		8007C4F21F0590F400292C41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8007C4F51F0590F400292C41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8007C4F71F0590F400292C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8007C4FE1F0592D900292C41 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8007C5021F06BBE800292C41 /* CameraPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPage.swift; sourceTree = "<group>"; };
+		809499341F09C28900C8189B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		809499371F09C35700C8189B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		809499391F0ABD1400C8189B /* coordinatePin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = coordinatePin.swift; sourceTree = "<group>"; };
+		8094993B1F0ABD5800C8189B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				809499351F09C28900C8189B /* CoreData.framework in Frameworks */,
+				8007C4FF1F0592D900292C41 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +52,10 @@
 		8007C4DF1F0590F400292C41 = {
 			isa = PBXGroup;
 			children = (
+				809499391F0ABD1400C8189B /* coordinatePin.swift */,
 				8007C4EA1F0590F400292C41 /* Zoo */,
 				8007C4E91F0590F400292C41 /* Products */,
+				8007C4FD1F0592D900292C41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +72,24 @@
 			children = (
 				8007C4EB1F0590F400292C41 /* AppDelegate.swift */,
 				8007C4ED1F0590F400292C41 /* ViewController.swift */,
+				8094993B1F0ABD5800C8189B /* TableViewController.swift */,
 				8007C4EF1F0590F400292C41 /* Main.storyboard */,
 				8007C4F21F0590F400292C41 /* Assets.xcassets */,
 				8007C4F41F0590F400292C41 /* LaunchScreen.storyboard */,
 				8007C4F71F0590F400292C41 /* Info.plist */,
+				809499361F09C35700C8189B /* Model.xcdatamodeld */,
+				8007C5021F06BBE800292C41 /* CameraPage.swift */,
 			);
 			path = Zoo;
+			sourceTree = "<group>";
+		};
+		8007C4FD1F0592D900292C41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				809499341F09C28900C8189B /* CoreData.framework */,
+				8007C4FE1F0592D900292C41 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +124,13 @@
 				TargetAttributes = {
 					8007C4E71F0590F400292C41 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6X54E5Y3RR;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -136,8 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8094993A1F0ABD1400C8189B /* coordinatePin.swift in Sources */,
+				8094993C1F0ABD5800C8189B /* TableViewController.swift in Sources */,
 				8007C4EE1F0590F400292C41 /* ViewController.swift in Sources */,
+				8007C5031F06BBE800292C41 /* CameraPage.swift in Sources */,
 				8007C4EC1F0590F400292C41 /* AppDelegate.swift in Sources */,
+				809499381F09C35700C8189B /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +297,8 @@
 		8007C4FB1F0590F400292C41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				DEVELOPMENT_TEAM = 6X54E5Y3RR;
 				INFOPLIST_FILE = Zoo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.warren.Zoo;
@@ -271,7 +310,8 @@
 		8007C4FC1F0590F400292C41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				DEVELOPMENT_TEAM = 6X54E5Y3RR;
 				INFOPLIST_FILE = Zoo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.warren.Zoo;
@@ -299,8 +339,22 @@
 				8007C4FC1F0590F400292C41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		809499361F09C35700C8189B /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				809499371F09C35700C8189B /* Model.xcdatamodel */,
+			);
+			currentVersion = 809499371F09C35700C8189B /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8007C4E01F0590F400292C41 /* Project object */;
 }
